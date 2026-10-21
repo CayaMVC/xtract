@@ -1,0 +1,396 @@
+/******General******/
+
+@font-face {
+  font-family: rastely-blur;
+  src: url("fonts/RastelyBlur-Regular.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #212121;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  height: auto;
+  display: block;
+  margin-top: 25px;
+  align-self: center;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #c0bbb3;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+
+  .logo img {
+    height: 50px;
+    margin: 0;
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+
+  @media (width < 800px) {
+    &.active .menu {
+      display: block;
+      background-color: #ffffff;
+      position: absolute;
+      top: 94px;
+      left: 0;
+      width: 100%;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+    }
+
+    &.active .menu li {
+      margin: 10px 20px;
+    }
+
+    &.active .menu a {
+      font-size: 24px;
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin-right: 20px;
+  }
+
+  li:last-child {
+    margin-right: 0;
+  }
+
+  a {
+    display: block;
+    padding: 10px;
+    color: #333333;
+    text-decoration: none;
+    transition: color 0.3s;
+    text-align: end;
+
+    &:hover {
+      color: #ff0000;
+    }
+  }
+
+  @media (width < 800px) {
+    display: none;
+  }
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  display: none;
+  padding: 0px;
+  opacity: 100%;
+
+  .line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333333;
+    margin-bottom: 5px;
+    transition: 0.2s linear;
+  }
+
+  @media (width < 800px) {
+    display: block;
+    background-color: transparent;
+    border: 0;
+
+    &.active .line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+      transition: 0.2s linear;
+    }
+
+    &.active .line:nth-child(2) {
+      opacity: 0;
+      transition: 0.15s linear;
+    }
+
+    &.active .line:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+      transition: 0.2s linear;
+    }
+  }
+}
+
+/******Navigation******/
+
+/******Homepage******/
+
+.htimg2 {
+  background-color: #776659;
+  border-radius: 10px;
+  padding: 10px;
+}
+.htimg3 {
+  background-color: #776659;
+  border-radius: 10px;
+  padding: 10px;
+}
+.htimg4 {
+  background-color: #c0bbb3;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.himg2 {
+  max-width: 19rem;
+  height: 15rem;
+  object-fit: cover;
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  position: absolute;
+  margin-top: 110px;
+}
+.himg3 {
+  max-width: 19rem;
+  height: 15rem;
+  object-fit: cover;
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.himg4 {
+  max-width: 19rem;
+  height: 15rem;
+  object-fit: cover;
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.himg5 {
+  max-height: 30rem;
+  object-fit: cover;
+}
+
+.background-img {
+  margin-top: 0;
+}
+
+button,
+a.btn {
+  border: none;
+  background-color: #5c3300;
+  color: #ffffff;
+  opacity: 20%;
+  padding: 40px 20px;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: rastely-blur;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 1);
+}
+
+.button2 {
+  border: none;
+  background-color: #c0bbb3;
+  color: #1d1312;
+  opacity: 70%;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 26px;
+  cursor: pointer;
+  position: relative;
+  padding: 10px;
+  padding-right: 40px;
+  padding-left: 40px;
+  font-family: rastely-blur;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 1);
+}
+
+.button3 {
+  border: none;
+  background-color: #1d1312;
+  color: #c0bbb3;
+  opacity: 70%;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 26px;
+  cursor: pointer;
+  position: relative;
+  padding: 10px;
+  padding-right: 40px;
+  padding-left: 40px;
+  font-family: rastely-blur;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 1);
+}
+
+.b2 {
+  position: absolute;
+}
+
+.b3 {
+  position: absolute;
+  background-color: #1d1312;
+  color: #c0bbb3;
+  opacity: 80%;
+}
+.b4 {
+  position: absolute;
+}
+
+main {
+  color: #212121;
+}
+
+h1 {
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 500;
+  font-size: 64px;
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-family: "Inconsala", monospace;
+  font-weight: 500;
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+
+p {
+  max-width: 50rem;
+  font-size: 22px;
+  margin-bottom: 3rem;
+  font-family: "Prompt", monospace;
+}
+
+.landing-page {
+  position: relative;
+}
+
+.picturetext {
+  position: absolute;
+}
+
+.m {
+  margin-top: 25px;
+}
+
+.p {
+  padding: 20px;
+  margin-left: 2%;
+  margin-top: 1%;
+}
+
+/******Coffee_Guide******/
+
+.cgbody {
+  background-image: url("/coffee-guide_images/metal.jpg");
+}
+
+/******Quiz******/
+.quiz-body {
+  background-image: url("/quiz_images/quiz_background.jpg");
+}
+
+.quiz-card {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  margin-top: 100px;
+}
+
+.quiz-card-content {
+  padding: 1rem;
+}
+
+.quiz-card-content > h1 {
+  font-size: 3.5rem;
+}
+
+.quiz-button {
+  opacity: 100%;
+  background-color: #c0bbb3;
+  color: #1d1312;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #1d1312;
+  border-radius: 20px;
+  font-family: "Inconsolata", monospace;
+  font-weight: 700;
+  font-size: 32px;
+  padding: 20px;
+}
+
+/******Origins******/
+
+/******Recipes******/
+
+/******Sustainability******/
+.sustaineble-background {
+  background-color: #c0bbb390;
+  padding-left: 5rem;
+  padding-top: 3rem;
+  margin-top: 5rem;
+  border-radius: 20px;
+}
+
+.black-background {
+  background-color: #212121df;
+  color: #c0bbb3;
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 18rem;
+  font-size: 20px;
+  padding-bottom: 5px;
+  margin-bottom: 2rem;
+}
+
+h4 {
+  font-family: rastely-blur;
+  font-size: xx-large;
+}
+
+.sb2 {
+  background-image: url("bg.jpg");
+}
+
+.simg {
+  margin-bottom: 2rem;
+  max-height: 20rem;
+  object-fit: cover;
+}
+
+.sheaviert {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/******Footer******/

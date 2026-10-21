@@ -1,0 +1,129 @@
+/******General******/
+
+main {
+  max-width: 1200px;
+  margin-inline: auto;
+  display: grid;
+}
+
+header {
+  z-index: 5;
+}
+
+.picturetext {
+  z-index: 0;
+}
+
+.background-img {
+  z-index: -1;
+  max-height: 45rem;
+  object-fit: cover;
+}
+
+/******Navigation******/
+
+/******Homepage******/
+.p > h1 {
+  max-width: 80%;
+}
+
+.p > h2 {
+  max-width: 50%;
+  margin-top: 2rem;
+}
+
+.button1 {
+  margin-top: 80px;
+  margin-left: 15%;
+}
+
+.button2 {
+  grid-column: 2 / span 1;
+}
+.t2 {
+  grid-column: 1 / span 2;
+}
+
+.grid_1 {
+  margin-top: 40px;
+  display: grid;
+  gap: 40px;
+
+  @media (width > 800px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.himg4 {
+  grid-column: 1 / span 2;
+}
+
+.t3 {
+  grid-column: 1 / span 2;
+}
+
+.text4 {
+  grid-column: 1 / span 2;
+}
+.himg3 {
+  grid-column: 1 / span 2;
+}
+
+.b3 {
+  grid-row: 2;
+  bottom: -30rem;
+}
+
+.b2 {
+  grid-row: 2;
+  bottom: -30rem;
+}
+.b4 {
+  grid-row: 2;
+  bottom: -30rem;
+}
+/******Coffee_Guide******/
+
+/******Quiz******/
+
+.grid_1-1 {
+  margin-top: 40px;
+  display: grid;
+  gap: 40px;
+
+  @media (width > 800px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.grid_1-1-1 {
+  display: grid;
+  margin-top: 40px;
+  gap: 40px;
+  margin-bottom: 5rem;
+
+  @media (width > 800px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/******Origins******/
+
+/******Recipes******/
+
+/******Sustainability******/
+.grid_3-1 {
+  margin-top: 40px;
+  display: grid;
+  gap: 40px;
+
+  @media (width > 800px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.placement {
+  grid-column: 2;
+}
+
+/******Footer******/
